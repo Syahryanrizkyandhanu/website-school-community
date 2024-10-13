@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-image">
+                <img src="https://via.placeholder.com/150" alt="Profile Picture" id="profile-pic">
+                <input type="file" id="profile-pic-upload" accept="image/*">
+            </div>
+            <div class="profile-info">
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" value="User Name">
+
+                <label for="profile-bio">Bio:</label>
+                <textarea id="profile-bio" placeholder="Enter your bio">This is my bio</textarea>
+
+                <label for="profile-achievements">Achievements:</label>
+                <input type="text" id="profile-achievements" value="Achievement 1, Achievement 2">
+            </div>
+        </div>
+
+        <div class="profile-link">
+            <label for="profile-link">Account Link:</label>
+            <input type="text" id="profile-link" value="https://example.com/user" readonly>
+            <button onclick="copyAccountLink()">Copy Link</button>
+        </div>
+
+        <div class="profile-actions">
+            <button onclick="saveProfile()">Save Changes</button>
+        </div>
+        <script src="profil.jss"></script>
+    </div>
+
+</body>
+
+</html>

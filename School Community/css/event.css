@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container-navbar {
+  width: 100%;
+  display: flex;
+  padding: 1.4rem 7%;
+  margin: 0;
+  height: 100px;
+  border: none;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  z-index: 9999;
+  position: fixed;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+li .li-navbar {
+  text-decoration: none;
+  color: inherit;
+}
+
+li .profile {
+  display: flex;
+  align-items: center;
+}
+
+li .profile img {
+  border-radius: 50%;
+}
+
+.Judul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url(https://i.pinimg.com/564x/81/29/c4/8129c47eea4ca2923d834a0daf316d72.jpg)
+    center center/cover; /* Sesuaikan dengan gambar background */
+  padding: 100px 20px; /* Tambahkan padding untuk jarak */
+  color: #fff; /* Ubah warna teks menjadi putih untuk kontras */
+  position: relative;
+  height: 70vh;
+  width: auto;
+  background-attachment: fixed;
+}
+
+.judulgede {
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.judul-main {
+  font-size: 90px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.judul-sub {
+  font-size: 1rem;
+  font-weight: 300;
+  width: 120vh;
+  height: auto;
+  text-align: center;
+}
+
+.Deskripsi1 {
+  color: whitesmoke;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  height: 70vh;
+  width: auto;
+  display: flex;
+  background-color: black;
+}
+
+.pre-title {
+  text-align: center;
+  gap: 30vh;
+  font-size: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: rgb(32, 6, 51);
+}
+
+.body .list-events {
+  background-color: #ddd;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-3 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Styling Individual Event Items */
+.list-events {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.list-events:hover {
+  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Image Container Styling */
+.cover img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Event Information Styling */
+.info-event {
+  padding: 15px;
+}
+
+.event-title h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.event-title a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.event-title a:hover {
+  text-decoration: underline;
+}
+
+/* Description Styling */
+.deskripsi-event {
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-container {
+    flex-wrap: wrap; /* Berpindah ke tampilan vertikal pada layar kecil */
+  }
+
+  .list-events {
+    width: 100%; /* Lebar penuh pada layar kecil */
+    margin-bottom: 20px; /* Jarak antar item pada layar kecil */
+  }
+}
+
+footer {
+  background-color: black;
+  height: 25vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+}
+
+.sosmed {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.facebook {
+  margin: 0 10px;
+}
+
+.twitter {
+  margin: 0 10px;
+}
+
+.instagram {
+  margin: 0 10px;
+}
+
+.youtube {
+  margin: 0 10px;
+}
+
+footer p {
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 250;
+}

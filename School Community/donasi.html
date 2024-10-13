@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Halaman donasi untuk mendukung kegiatan sekolah."
+    />
+    <title>Donation Page</title>
+    <link rel="stylesheet" href="donation.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f0f2f5;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .donation-container {
+        background: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 400px;
+      }
+
+      .donation-container h1 {
+        margin: 0 0 20px;
+        text-align: center;
+        color: #333;
+      }
+
+      .donation-container p {
+        font-size: 14px;
+        text-align: center;
+        color: #777;
+        margin-bottom: 30px;
+      }
+
+      .donation-container label {
+        display: block;
+        margin-bottom: 10px;
+        color: #555;
+      }
+
+      .donation-container input[type="number"],
+      .donation-container select,
+      .donation-container input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      .donation-container input[type="number"]::placeholder {
+        color: #999;
+      }
+
+      .donation-container input[type="number"]:focus,
+      .donation-container select:focus,
+      .donation-container input[type="text"]:focus {
+        border-color: #1abc9c;
+        outline: none;
+      }
+
+      .donation-container button {
+        width: 100%;
+        background: #1abc9c;
+        color: white;
+        border: none;
+        padding: 15px;
+        cursor: pointer;
+        font-size: 16px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+
+      .donation-container button:hover {
+        background: #16a085;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="donation-container">
+      <h1>Support Our Cause</h1>
+      <p>
+        Your donation will help us support various school activities and
+        programs. Thank you for your generosity!
+      </p>
+
+      <!-- Form Donasi -->
+      <form>
+        <!-- Input Jumlah Donasi -->
+        <label for="amount">Donation Amount</label>
+        <input
+          type="number"
+          id="amount"
+          name="amount"
+          min="1"
+          placeholder="Enter amount in USD"
+        />
+
+        <!-- Input Nama Donatur -->
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        />
+
+        <!-- Pilihan Metode Pembayaran -->
+        <label for="payment-method">Payment Method</label>
+        <select id="payment-method" name="payment-method">
+          <option value="credit-card">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="bank-transfer">Bank Transfer</option>
+        </select>
+
+        <!-- Tombol Submit -->
+        <button type="submit">Donate Now</button>
+      </form>
+    </div>
+  </body>
+</html>
